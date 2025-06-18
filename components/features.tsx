@@ -51,8 +51,7 @@ const Features = () => {
   return (
     <div id="features" className="w-full py-12 xs:py-20 px-6">
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
-        Specialized tooling and cloud infrastructure
-        for Digital Health AI applications
+        Specialized tooling and cloud infrastructure<br/>for Digital Health AI applications
       </h2>
       <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature) => (
