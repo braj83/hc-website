@@ -21,14 +21,14 @@ const Hero = () => {
           <div className="mt-12 flex flex-col sm:flex-row items-center sm:justify-center gap-4">
             <Button
               size="lg"
-              className="w-full sm:w-auto rounded-full text-base"
+              className="w-full sm:w-auto text-base"
             >
               Get Started <ArrowUpRight className="!h-5 !w-5" />
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="w-full sm:w-auto rounded-full text-base shadow-none"
+              className="w-full sm:w-auto text-base shadow-none"
             >
               <CirclePlay className="!h-5 !w-5" /> Watch Demo
             </Button>
