@@ -3,10 +3,25 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 import React from "react";
 import LogoCloud from "../logo-cloud";
+import Image from 'next/image'; // Import the Image component
 
 const Hero = () => {
   return (
-    <div className="min-h-[calc(100vh-6rem)] flex flex-col items-center py-20 px-6">
+    // Added 'relative' to act as a container for the absolute positioned image
+    // Added 'overflow-hidden' to ensure the blurred image doesn't bleed out
+    <div className="relative min-h-[calc(100vh-6rem)] flex flex-col items-center py-20 px-6 overflow-hidden">
+      
+      {/* This div holds the background image */}
+      <div className="absolute inset-0 -z-10 opacity-30 blur-xl">
+        <Image
+          src="/chatbot-hero.webp" // Make sure your image is in public/hero-image.jpg
+          alt="" // Alt text is empty as the image is decorative
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      
+      {/* All your original content is below */}
       <div className="md:mt-6 flex items-center justify-center">
         <div className="text-center max-w-2xl">
           <Badge className="bg-primary rounded-md py-1 border-none">
@@ -35,7 +50,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <LogoCloud className="mt-24 max-w-3xl mx-auto" />
+      
+      {/* Added 'relative' and 'z-10' to ensure the logo cloud appears above the background image */}
+      <LogoCloud className="mt-24 max-w-3xl mx-auto relative z-10" />
     </div>
   );
 };
