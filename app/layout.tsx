@@ -9,7 +9,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "PureLanding - Beautiful Shadcn UI Landing Page",
+  title: "HealthCheck",
   description:
     "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
   keywords: [
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    siteName: "PureLanding",
+    siteName: "HealthCheck",
     locale: "en_US",
-    url: "https://shadcn-landing-page.vercel.app",
-    title: "PureLanding - Beautiful Shadcn UI Landing Page",
+    url: "https://hc-website-six.vercel.app/",
+    title: "HealthCheck",
     description:
       "A beautiful landing page built with Shadcn UI, Next.js 15, Tailwind CSS, and Shadcn UI Blocks.",
     images: [

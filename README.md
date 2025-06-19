@@ -4,7 +4,7 @@ A modern, responsive landing page template built with Next.js, Tailwind CSS, and
 
 ## Demo
 
-[Live Demo](https://pure-landing-shadcnui-template.vercel.app/)
+[Live Demo](https://hc-website-six.vercel.app/)
 
 ## Preview
 
