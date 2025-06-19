@@ -3,27 +3,27 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 import React from "react";
 import LogoCloud from "../logo-cloud";
-import Image from 'next/image'; // Import the Image component
+import Image from 'next/image';
 
 const Hero = () => {
   return (
-    // Added 'relative' to act as a container for the absolute positioned image
-    // Added 'overflow-hidden' to ensure the blurred image doesn't bleed out
-    <div className="relative min-h-[calc(100vh-6rem)] flex flex-col items-center py-20 px-6 overflow-hidden">
+    <div className="relative min-h-[calc(100vh-6rem)] flex flex-col items-center justify-center py-20 px-6 overflow-hidden">
       
-      {/* This div holds the background image */}
+      {/* 1. Blurred Full-Screen Background Image */}
       <div className="absolute inset-0 -z-10 opacity-30 blur-xl">
         <Image
-          src="/chatbot-hero.webp" // Make sure your image is in public/hero-image.jpg
-          alt="" // Alt text is empty as the image is decorative
+          src="/chatbot-hero.webp" // This is your blurred background
+          alt=""
           layout="fill"
           objectFit="cover"
         />
       </div>
-      
-      {/* All your original content is below */}
-      <div className="md:mt-6 flex items-center justify-center">
-        <div className="text-center max-w-2xl">
+
+      {/* Main content container using Flexbox */}
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+        
+        {/* 2. Text Content Block (on top) */}
+        <div className="relative z-10 text-center lg:text-left max-w-2xl">
           <Badge className="bg-primary rounded-md py-1 border-none">
             v1.0.0 is available now! 🚀
           </Badge>
@@ -33,7 +33,7 @@ const Hero = () => {
           <p className="mt-6 max-w-[60ch] xs:text-lg">
             HealthCloud is a development platform that empowers you to quickly and responsibly implement custom AI solutions integrated with your data and existing tech stack.
           </p>
-          <div className="mt-12 flex flex-col sm:flex-row items-center sm:justify-center gap-4">
+          <div className="mt-12 flex flex-col sm:flex-row items-center sm:justify-center gap-4 lg:justify-start">
             <Button
               size="lg"
               className="w-full sm:w-auto text-base"
@@ -49,9 +49,20 @@ const Hero = () => {
             </Button>
           </div>
         </div>
+
+        {/* 3. Medium Image Block (behind text, pulled left for overlap) */}
+        <div className="relative z-0 lg:-ml-20">
+          <Image
+            src="/your-medium-image.png" // IMPORTANT: Replace with your image file name
+            alt="Healthcare AI illustration"
+            width={500}  // Adjust width as needed
+            height={500} // Adjust height as needed
+            className="rounded-lg"
+          />
+        </div>
       </div>
-      
-      {/* Added 'relative' and 'z-10' to ensure the logo cloud appears above the background image */}
+
+      {/* Logo Cloud at the bottom */}
       <LogoCloud className="mt-24 max-w-3xl mx-auto relative z-10" />
     </div>
   );
