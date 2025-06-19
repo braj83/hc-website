@@ -41,8 +41,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Your Image (z-0 places it behind the text) */}
-        <div className="relative z-0 mt-12 lg:mt-0 lg:-ml-20">
+        {/* Your Image (z-5 places it behind the text) */}
+        <div className="relative z-5 mt-12 lg:mt-0 lg:-ml-20">
           <Image
             src="/chatbot-hero.webp"
             alt="Healthcare AI illustration"
