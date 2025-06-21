@@ -42,9 +42,13 @@ const features = [
       "Use our curated library of models trained on clinical, financial, and operational data—or plug in your own.",
     cta: "See AI Models",
     media: (
-      <div className="w-full h-full bg-green-50 rounded-xl flex items-center justify-center p-8 text-green-900">
-        <h3 className="text-2xl font-semibold">Diagram of AI Models</h3>
-      </div>
+      <Image
+        src="/CuteRobotIntegrations.png"
+        alt="A visual of the Healthcare AI Component Library"
+        width={1200}
+        height={800}
+        className="w-full h-full object-cover rounded-xl"
+      />
     ),
   },
   {
@@ -132,7 +136,7 @@ const Features04Page = () => {
                   <AccordionContent className="text-[17px] leading-relaxed text-muted-foreground">
                     <p>{description}</p>
                       <div className="mt-6 md:hidden">
-                        <div className="w-full aspect-video rounded-xl mb-4">
+                        <div className="w-full h-[75vh] rounded-xl mb-4">
                           {media}
                         </div>
                         <div className="flex justify-end">
