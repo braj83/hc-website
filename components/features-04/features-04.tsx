@@ -126,9 +126,6 @@ const Features04Page = () => {
                   </AccordionTrigger>
                   <AccordionContent className="text-[17px] leading-relaxed text-muted-foreground">
                     <p>{description}</p>
-                    <div className="flex justify-end">
-                      <Button className="mt-6">{cta}</Button>
-                    </div>
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -136,14 +133,19 @@ const Features04Page = () => {
           </div>
 
           {/* Media */}
-          <div className="hidden md:block w-full h-full rounded-xl">
+          <div className="hidden md:block w-full h-full rounded-xl relative">
             {activeFeature ? (
-              activeFeature.media
+              <>
+                {activeFeature.media}
+                <Button className="absolute bottom-6 right-6">
+                  {activeFeature.cta}
+                </Button>
+              </>
             ) : (
               <div className="w-full h-full bg-muted rounded-xl" />
-                )}
-              </div>
+            )}
           </div>
+        </div>
       </div>
     </div>
   );
