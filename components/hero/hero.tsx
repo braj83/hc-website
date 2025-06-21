@@ -43,10 +43,10 @@ const Hero = () => {
         {/* Your Image (z-5 places it behind the text) */}
         <div className="relative z-5 mt-12 lg:mt-0 lg:-ml-20">
           <Image
-            src="/chatbot-hero.webp"
+            src="/cute-robot-say-hello.png"
             alt="Healthcare AI illustration"
-            width={450}  // You can adjust this width
-            height={450} // You can adjust this height
+            width={450}
+            height={450}
             className="rounded-lg"
           />
         </div>

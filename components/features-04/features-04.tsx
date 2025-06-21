@@ -28,7 +28,7 @@ const features = [
     media: (
       <div className="w-full h-full relative">
         <Image
-        src="/CuteRobotLibrary.png"
+        src="/cute-robot-bring-box.png"
         alt="A visual of the healthcare AI component library"
         width={1200}
         height={800}
@@ -45,13 +45,16 @@ const features = [
       "Use our curated library of models trained on clinical, financial, and operational data—or plug in your own.",
     cta: "See AI Models",
     media: (
-      <Image
-        src="/CuteRobotIntegrations.png"
-        alt="A visual of the Healthcare AI Component Library"
+      <div className="w-full h-full relative">
+        <Image
+        src="/cute-robot-with-badge.png"
+        alt="A visual of the healthcare AI component library"
         width={1200}
         height={800}
         className="w-full h-full object-contain rounded-xl"
-      />
+        />
+        <Button className="absolute bottom-6 right-6">See AI Models</Button>
+      </div>
     ),
   },
   {
@@ -61,8 +64,15 @@ const features = [
       "Combine LLMs, specialized models, app functions, API connectors, and your data to create custom solutions that reduce costs, increase access, and improve patient outcomes.",
     cta: "Open the Studio",
     media: (
-      <div className="w-full h-full bg-purple-50 rounded-xl flex items-center justify-center p-8 text-purple-900">
-        <h3 className="text-2xl font-semibold">Screenshot of AI Studio</h3>
+      <div className="w-full h-full relative">
+        <Image
+        src="/cute-robot-with-creative-idea.png"
+        alt="A visual of the healthcare AI component library"
+        width={1200}
+        height={800}
+        className="w-full h-full object-contain rounded-xl"
+        />
+        <Button className="absolute bottom-6 right-6">Open the Studio</Button>
       </div>
     ),
   },
@@ -73,8 +83,15 @@ const features = [
       "Our “Connector” architecture enables seamless and secure integration with a wide variety of enterprise platforms to ensure that your custom AI solutions are compatible with your existing tech stack.",
     cta: "View Integrations",
     media: (
-      <div className="w-full h-full bg-orange-50 rounded-xl flex items-center justify-center p-8 text-orange-900">
-        <h3 className="text-2xl font-semibold">Integration Logos</h3>
+      <div className="w-full h-full relative">
+        <Image
+        src="/cute-robot-with-puzzle.png"
+        alt="A visual of the healthcare AI component library"
+        width={1200}
+        height={800}
+        className="w-full h-full object-contain rounded-xl"
+        />
+        <Button className="absolute bottom-6 right-6">View Integrations</Button>
       </div>
     ),
   },
@@ -85,8 +102,15 @@ const features = [
       "Our platform leverages blockchain technology to enable programmatic enforcement of policies governing data access and human/AI interactions.",
     cta: "Learn About Security",
     media: (
-      <div className="w-full h-full bg-gray-100 rounded-xl flex items-center justify-center p-8 text-gray-800">
-        <h3 className="text-2xl font-semibold">Security & Compliance Visual</h3>
+      <div className="w-full h-full relative">
+        <Image
+        src="/cute-robot-open-the-box.png"
+        alt="A visual of the healthcare AI component library"
+        width={1200}
+        height={800}
+        className="w-full h-full object-contain rounded-xl"
+        />
+        <Button className="absolute bottom-6 right-6">Learn About Security</Button>
       </div>
     ),
   },
@@ -97,8 +121,15 @@ const features = [
       "Universal Healthcare Knowledgebase and Clinical Data Exchange. A standards-based foundation of clinical, regulatory, and operational data powering safe, accurate, and scalable healthcare AI.",
     cta: "Explore Knowledgebase",
     media: (
-      <div className="w-full h-full bg-indigo-50 rounded-xl flex items-center justify-center p-8 text-indigo-900">
-        <h3 className="text-2xl font-semibold">Knowledgebase Diagram</h3>
+      <div className="w-full h-full relative">
+        <Image
+        src="/cute-robot-reading-book.png"
+        alt="A visual of the healthcare AI component library"
+        width={1200}
+        height={800}
+        className="w-full h-full object-contain rounded-xl"
+        />
+        <Button className="absolute bottom-6 right-6">Explore Knowledgebase</Button>
       </div>
     ),
   },
