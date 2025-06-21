@@ -10,25 +10,25 @@ const faq = [
     icon: BriefcaseMedical,
     question: "Providers",
     answer:
-      "Our AI-driven solutions enhance clinical efficiency and patient care in diverse healthcare settings. From real-time diagnostic support to streamlined administrative processes, our platform empowers providers to offer superior care. Features like AI-assisted imaging and predictive analytics enable providers to make faster, more accurate decisions, improving patient outcomes and operational efficiency.",
+      "Our AI-driven solutions enhance clinical efficiency and patient care in diverse healthcare settings.<br/>From real-time diagnostic support to streamlined administrative processes, our platform empowers providers to offer superior care. Features like AI-assisted imaging and predictive analytics enable providers to make faster, more accurate decisions, improving patient outcomes and operational efficiency.",
   },
   {
     icon: Building2,
     question: "Employers",
     answer:
-      "Our platform helps employers reduce healthcare costs while boosting employee health and productivity. With tools for early disease detection, personalized wellness programs, and chronic disease management, employers can foster a healthier workforce. Enhanced data insights allow for tailored health strategies, improving overall workforce wellness and reducing absenteeism.",
+      "Our platform helps employers reduce healthcare costs while boosting employee health and productivity.<br/>With tools for early disease detection, personalized wellness programs, and chronic disease management, employers can foster a healthier workforce. Enhanced data insights allow for tailored health strategies, improving overall workforce wellness and reducing absenteeism.",
   },
   {
     icon: Landmark,
     question: "Payors",
     answer:
-      "We equip payors with the tools to enhance member satisfaction and reduce costs through smarter resource allocation. Our AI solutions provide comprehensive analytics for risk assessment and management, fraud detection, and claims processing efficiency. By integrating our technology, payers can offer personalized health plans and proactive care, improving outcomes and member engagement.",
+      "We equip payors with the tools to enhance member satisfaction and reduce costs through smarter resource allocation.<br/>Our AI solutions provide comprehensive analytics for risk assessment and management, fraud detection, and claims processing efficiency. By integrating our technology, payers can offer personalized health plans and proactive care, improving outcomes and member engagement.",
   },
   {
     icon: Microscope,
     question: "Researchers",
     answer:
-      "We support researchers at every stage—from securing funding to publishing results. Our platform facilitates robust data management, simplifies patient enrollment and engagement, and ensures compliance with regulatory standards. By leveraging our advanced analytics, researchers can uncover insights faster, driving innovations in medical research and ultimately enhancing patient care.",
+      "We support researchers at every stage—from securing funding to publishing results.<br/>Our platform facilitates robust data management, simplifies patient enrollment and engagement, and ensures compliance with regulatory standards. By leveraging our advanced analytics, researchers can uncover insights faster, driving innovations in medical research and ultimately enhancing patient care.",
   },
 ];
 
