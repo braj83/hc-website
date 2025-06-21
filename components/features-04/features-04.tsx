@@ -31,7 +31,7 @@ const features = [
         alt="A visual of the Healthcare AI Component Library"
         width={1200}
         height={800}
-        className="w-full h-full object-cover rounded-xl"
+        className="w-full h-full object-contain rounded-xl"
       />
     ),
   },
@@ -47,7 +47,7 @@ const features = [
         alt="A visual of the Healthcare AI Component Library"
         width={1200}
         height={800}
-        className="w-full h-full object-cover rounded-xl"
+        className="w-full h-full object-contain rounded-xl"
       />
     ),
   },
@@ -136,7 +136,7 @@ const Features04Page = () => {
                   <AccordionContent className="text-[17px] leading-relaxed text-muted-foreground">
                     <p>{description}</p>
                       <div className="mt-6 md:hidden">
-                        <div className="w-full h-[75vh] rounded-xl mb-4">
+                        <div className="w-full h-[60vh] rounded-xl mb-4">
                           {media}
                         </div>
                         <div className="flex justify-end">
