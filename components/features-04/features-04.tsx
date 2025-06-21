@@ -154,7 +154,7 @@ const Features04Page = () => {
             {activeFeature ? (
               <>
                 {activeFeature.media}
-                <Button className="absolute bottom-6 right-6">
+                <Button className="absolute bottom-[calc(1.5rem_-20px)] right-[calc(1.5rem_-20px)]">
                   {activeFeature.cta}
                 </Button>
               </>
