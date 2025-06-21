@@ -61,18 +61,18 @@ const features = [
 
 const Features = () => {
   return (
-    <div id="features" className="w-full max-w-screen-xl py-16 xs:py-16 px-6">
+    <div id="features" className="w-full max-w-screen-lg mx-auto py-16 xs:py-16 px-6">
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
         Healthcare AI Platform
       </h2>
-      <p className="mt-6 max-w-[60ch] text-center xs:text-lg">
+      <p className="mt-6 max-w-[60ch] text-center mx-auto xs:text-lg">
             Modularized platform architecture with high degree of configurability to meet diverse requirements of patients, providers, and payers.
           </p>
-      <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="flex flex-col bg-background border rounded-xl px-5"
+            className="flex flex-col h-full bg-background border rounded-xl p-6"
           >
             <div className="mb-3 h-10 w-10 flex items-center justify-center bg-muted rounded-full">
               <feature.icon className="h-6 w-6" />
