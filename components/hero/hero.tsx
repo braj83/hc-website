@@ -52,9 +52,6 @@ const Hero = () => {
           />
         </div>
       </div>
-
-      {/* Logo Cloud at the bottom */}
-      <LogoCloud className="mt-24 max-w-3xl mx-auto relative z-10" />
     </div>
   );
 };
