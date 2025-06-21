@@ -125,8 +125,10 @@ const Features04Page = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-[17px] leading-relaxed text-muted-foreground">
-                    {description}
-                    <Button className="mt-6 block">{cta}</Button>
+                    <p>{description}</p>
+                    <div className="flex justify-end">
+                      <Button className="mt-6">{cta}</Button>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               ))}
