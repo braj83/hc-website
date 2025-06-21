@@ -61,7 +61,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div id="features" className="w-full max-w-screen-xl mx-auto py-16 xs:py-16 px-6">
+    <div id="features" className="w-full max-w-screen-xl mx-auto py-16 xs:py-16 xl:px-0">
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
         Healthcare AI Platform
       </h2>
