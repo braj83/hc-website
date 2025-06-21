@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <BackgroundPattern />
       <main className="pt-16 xs:pt-20 sm:pt-24">
         <Hero />
-        <BackgroundPattern />
         <Features />
         <Features4 />
         <FAQ />
