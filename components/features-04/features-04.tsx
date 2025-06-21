@@ -170,7 +170,7 @@ const Features04Page = () => {
                   <AccordionContent className="text-[17px] leading-relaxed text-muted-foreground">
                     <p>{description}</p>
                       <div className="mt-6 md:hidden">
-                        <div className="w-full h-[60vh] rounded-xl mb-4">
+                        <div className="w-full h-[45vh] rounded-xl mb-4">
                           {media}
                         </div>
                       </div>
