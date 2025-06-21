@@ -45,6 +45,18 @@ const features = [
     description:
       "Comment, tag, and assign tasks directly within your documents.",
   },
+  {
+    icon: ChartPie,
+    title: "Reference Lab Integrations",
+    description:
+      "Track engagement, clicks, and user activity with intuitive charts and reports.",
+  },
+  {
+    icon: MessageCircle,
+    title: "AI Governance and Trust Framework",
+    description:
+      "Comment, tag, and assign tasks directly within your documents.",
+  },
 ];
 
 const Features = () => {
@@ -56,11 +68,11 @@ const Features = () => {
       <p className="mt-6 text-center xs:text-lg">
             Modularized platform architecture with high degree of configurability to meet diverse requirements of patients, providers, and payers.
           </p>
-      <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="flex flex-col bg-background border rounded-xl py-6 px-5"
+            className="flex flex-col bg-background border rounded-xl px-5"
           >
             <div className="mb-3 h-10 w-10 flex items-center justify-center bg-muted rounded-full">
               <feature.icon className="h-6 w-6" />
