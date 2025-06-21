@@ -11,7 +11,7 @@ import React from "react";
 const features = [
   {
     icon: Settings2,
-    title: "Remote Patient Monitoring",
+    title: "EHR/CRM Integrations",
     description:
       "Design your space with drag-and-drop simplicity—create grids, lists, or galleries in seconds.",
   },
@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: Bot,
-    title: "CRM Integration",
+    title: "Voice Agents",
     description:
       "Generate summaries, auto-format content, or translate into multiple languages seamlessly.",
   },
@@ -35,13 +35,13 @@ const features = [
   },
   {
     icon: ChartPie,
-    title: "Diagnostic Testing ",
+    title: "Reference Lab Integrations",
     description:
       "Track engagement, clicks, and user activity with intuitive charts and reports.",
   },
   {
     icon: MessageCircle,
-    title: "EHR Integrations",
+    title: "AI Governance and Trust Framework",
     description:
       "Comment, tag, and assign tasks directly within your documents.",
   },
@@ -51,8 +51,11 @@ const Features = () => {
   return (
     <div id="features" className="w-full py-12 xs:py-20 px-6">
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
-        Specialized tooling and cloud infrastructure<br/>for Digital Health AI applications
+        Healthcare AI Platform
       </h2>
+      <p className="mt-6 max-w-[60ch] xs:text-lg">
+            Modularized platform architecture with high degree of configurability to meet diverse requirements of patients, providers, and payers.
+          </p>
       <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature) => (
           <div

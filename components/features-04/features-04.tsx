@@ -57,7 +57,7 @@ const Features04Page = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-lg w-full py-12 px-6">
         <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-lg">
-          Boost Your Strategy with Smart Features
+          Build faster with our component library
         </h2>
         <div className="mt-6 md:mt-8 w-full mx-auto grid md:grid-cols-2 gap-12">
           <div>
