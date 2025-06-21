@@ -27,11 +27,10 @@ export default function CTABanner() {
         />
         <div className="relative z-0 flex flex-col gap-3">
           <h3 className="text-3xl md:text-4xl font-semibold">
-            Ready to Elevate Your Experience?
+            Let’s Build Your POC!
           </h3>
           <p className="mt-2 text-base md:text-lg">
-            Take your workflow to the next level with Shadcn UI Blocks. Sign up
-            today and start exploring!
+            Launch a fully functional, high-impact proof of concept in just a few weeks—efficient, cost-effective, and tailored to your needs.
           </p>
         </div>
         <div className="relative z-0 mt-14 flex flex-col sm:flex-row gap-4">

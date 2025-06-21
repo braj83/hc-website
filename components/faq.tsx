@@ -1,48 +1,34 @@
 import {
-  BadgeDollarSign,
-  Route,
-  ShieldCheck,
-  Truck,
-  Undo2,
-  UserRoundCheck,
+  Microscope,
+  Building2,
+  Landmark,
+  BriefcaseMedical,
 } from "lucide-react";
 
 const faq = [
   {
-    icon: Undo2,
-    question: "What is your return policy?",
+    icon: BriefcaseMedical,
+    question: "Providers",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "Our AI-driven solutions enhance clinical efficiency and patient care in diverse healthcare settings. From real-time diagnostic support to streamlined administrative processes, our platform empowers providers to offer superior care. Features like AI-assisted imaging and predictive analytics enable providers to make faster, more accurate decisions, improving patient outcomes and operational efficiency.",
   },
   {
-    icon: Route,
-    question: "How do I track my order?",
+    icon: Building2,
+    question: "Employers",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "Our platform helps employers reduce healthcare costs while boosting employee health and productivity. With tools for early disease detection, personalized wellness programs, and chronic disease management, employers can foster a healthier workforce. Enhanced data insights allow for tailored health strategies, improving overall workforce wellness and reducing absenteeism.",
   },
   {
-    icon: Truck,
-    question: "Do you ship internationally?",
+    icon: Landmark,
+    question: "Payors",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "We equip payors with the tools to enhance member satisfaction and reduce costs through smarter resource allocation. Our AI solutions provide comprehensive analytics for risk assessment and management, fraud detection, and claims processing efficiency. By integrating our technology, payers can offer personalized health plans and proactive care, improving outcomes and member engagement.",
   },
   {
-    icon: BadgeDollarSign,
-    question: "What payment methods do you accept?",
+    icon: Microscope,
+    question: "Researchers",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
-  },
-  {
-    icon: ShieldCheck,
-    question: "What if I receive a damaged item?",
-    answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
-  },
-  {
-    icon: UserRoundCheck,
-    question: "How can I contact customer support?",
-    answer:
-      "Reach out via email at support@example.com or call us at 1-800-123-4567 for assistance with any inquiries.",
+      "We support researchers at every stage—from securing funding to publishing results. Our platform facilitates robust data management, simplifies patient enrollment and engagement, and ensures compliance with regulatory standards. By leveraging our advanced analytics, researchers can uncover insights faster, driving innovations in medical research and ultimately enhancing patient care.",
   },
 ];
 
@@ -54,10 +40,10 @@ const FAQ = () => {
     >
       <div className="max-w-screen-lg">
         <h2 className="text-3xl xs:text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight text-center">
-          Frequently Asked Questions
+          Who we serve
         </h2>
         <p className="mt-3 xs:text-lg text-center text-muted-foreground">
-          Quick answers to common questions about our products and services.
+          Delivering powerful, configurable solutions for every pillar of the healthcare ecosystem.
         </p>
 
         <div className="mt-12 grid md:grid-cols-2 bg-background rounded-xl overflow-hidden outline outline-[1px] outline-border outline-offset-[-1px]">

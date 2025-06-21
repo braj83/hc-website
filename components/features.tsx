@@ -47,13 +47,13 @@ const features = [
   },
   {
     icon: ChartPie,
-    title: "Reference Lab Integrations",
+    title: "Uber/DoorDash Deliver",
     description:
       "Track engagement, clicks, and user activity with intuitive charts and reports.",
   },
   {
     icon: MessageCircle,
-    title: "AI Governance and Trust Framework",
+    title: "RPM Automation",
     description:
       "Comment, tag, and assign tasks directly within your documents.",
   },

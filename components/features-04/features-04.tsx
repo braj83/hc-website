@@ -5,50 +5,50 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {
-  BookCheck,
-  ChartPie,
-  FolderSync,
-  Goal,
-  Users,
-  Zap,
+  Bot,
+  PaintbrushVertical,
+  ShieldCheck,
+  Blocks,
+  PlugZap,
+  BookMarked,
 } from "lucide-react";
 
 const features = [
   {
-    icon: Goal,
-    title: "Identify Opportunities",
+    icon: Blocks,
+    title: "Build faster with our Component library",
     description:
-      "Easily uncover untapped areas to explore and expand your reach effortlessly and effectively.",
+      "Explore a wide range of pre-built modules that help you launch Healthcare AI applications faster and with less effort than ever before.",
   },
   {
-    icon: BookCheck,
-    title: "Build Authority",
+    icon: Bot,
+    title: "Build smarter with best-in-class AI models",
     description:
-      "Create valuable content that resonates, inspires trust, and positions you as an expert.",
+      "Use our curated library of models trained on clinical, financial, and operational data—or plug in your own.",
   },
   {
-    icon: ChartPie,
-    title: "Instant Insights",
+    icon: PaintbrushVertical,
+    title: "Build easier with our Healthcare AI Studio",
     description:
-      "Gain immediate, actionable insights with a quick glance, enabling fast decision-making.",
+      "Combine LLMs, specialized models, app functions, API connectors, and your data to create custom solutions that that reduce costs, increase access, and improve patient outcomes.",
   },
   {
-    icon: Users,
-    title: "Engage with Your Audience",
+    icon: PlugZap,
+    title: "Seamless integration with your tech stack",
     description:
-      "Boost audience engagement with interactive features like polls, quizzes, and forms.",
+      "Our “Connector” architecture enables seamless and secure integration with a wide variety of enterprise platforms to ensure that your custom AI solutions are compatible with your existing tech stack.",
   },
   {
-    icon: FolderSync,
-    title: "Automate Your Workflow",
+    icon: ShieldCheck,
+    title: "Secure, compliant, and auditable",
     description:
-      "Streamline your processes by automating repetitive tasks, saving time and reducing effort.",
+      "Our platform leverages blockchain technology to enable programmatic enforcement of policies governing data access and human/AI interactions.",
   },
   {
-    icon: Zap,
-    title: "Accelerate Growth",
+    icon: BookMarked,
+    title: "Universal Healthcare Knowledgebase",
     description:
-      "Supercharge your growth by implementing strategies that drive results quickly and efficiently.",
+      "Universal Healthcare Knowledgebase and Clinical Data Exchange. A standards-based foundation of clinical, regulatory, and operational data powering safe, accurate, and scalable healthcare AI.",
   },
 ];
 
@@ -57,7 +57,7 @@ const Features04Page = () => {
     <div id="platform" className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-lg w-full py-12 px-6 lg:px-0">
         <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-lg">
-          Build faster with our component library
+          Build faster with our Platform
         </h2>
         <div className="mt-6 md:mt-8 w-full mx-auto grid md:grid-cols-2 gap-12">
           <div>

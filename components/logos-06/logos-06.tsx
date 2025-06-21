@@ -15,7 +15,7 @@ const Logos06Page = () => {
     <div className="flex items-center justify-center px-6 pb-12">
       <div className="overflow-hidden">
         <p className="text-center text-xl">
-          More than 2.2 million companies worldwide already trust us
+          Hundreds of models in a HIPAA-compliant framework
         </p>
 
         <div className="mt-6 flex items-center justify-center gap-x-14 gap-y-10 max-w-screen-xl">
