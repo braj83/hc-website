@@ -65,7 +65,7 @@ const Features = () => {
       <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
         Healthcare AI Platform
       </h2>
-      <p className="mt-6 text-center xs:text-lg">
+      <p className="mt-6 max-w-[60ch] text-center xs:text-lg">
             Modularized platform architecture with high degree of configurability to meet diverse requirements of patients, providers, and payers.
           </p>
       <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
