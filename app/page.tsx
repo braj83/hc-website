@@ -8,7 +8,6 @@ import { BackgroundPattern } from "@/components/hero/background-pattern";
 import { Navbar } from "@/components/navbar";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact-02/contact-02";
-import Blog from "@/app/blog/page";
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
         <FAQ />
         <Contact />
         <Testimonials />
-        <Blog />
         <CTABanner />
         <Footer />
       </main>
