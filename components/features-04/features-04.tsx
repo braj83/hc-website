@@ -121,7 +121,7 @@ const Features04Page = () => {
               type="single"
               className="w-full"
             >
-              {features.map(({ title, description, icon: Icon, cta, media }, index) => (
+              {features.map(({ title, description, icon: Icon, media }, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
