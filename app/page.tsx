@@ -1,6 +1,7 @@
 import CTABanner from "@/components/cta-banner";
 import FAQ from "@/components/faq";
 import Features from "@/components/features";
+import Features4 from "@/components/features-04/features-04";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero/hero";
 import { BackgroundPattern } from "@/components/hero/background-pattern";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <BackgroundPattern />
         <Features />
+        <Features4 />
         <Pricing />
         <FAQ />
         <Testimonials />
