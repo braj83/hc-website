@@ -28,17 +28,15 @@ const features = [
     media: (
       <div className="w-full h-full relative">
         <Image
-        src="/images/component-library.png"
-        alt="A visual of the Healthcare AI Component Library"
+        src="/CuteRobotLibrary.png"
+        alt="A visual of the healthcare AI component library"
         width={1200}
         height={800}
         className="w-full h-full object-contain rounded-xl"
-      />
-      <Button className="absolute bottom-6 right-6">
-        Explore Library
-      </Button>
-  </div>
-          ),
+        />
+        <Button className="absolute bottom-6 right-6">Explore Library</Button>
+      </div>
+    ),
   },
   {
     icon: Bot,
@@ -153,16 +151,7 @@ const Features04Page = () => {
 
           {/* Media */}
           <div className="hidden md:block w-full h-full rounded-xl relative">
-            {activeFeature ? (
-              <>
-                {activeFeature.media}
-                <Button className="absolute bottom-[calc(1.5rem_-20px)] right-[calc(1.5rem_-20px)]">
-                  {activeFeature.cta}
-                </Button>
-              </>
-            ) : (
-              <div className="w-full h-full bg-muted rounded-xl" />
-            )}
+            {activeFeature ? activeFeature.media : null}
           </div>
         </div>
       </div>
