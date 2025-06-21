@@ -12,9 +12,9 @@ import { ChevronRight } from "lucide-react";
 
 const Blog02Page = () => {
   return (
-    <div className="max-w-screen-xl mx-auto py-20 px-6 xl:px-0">
+    <div id="news" className="max-w-screen-xl mx-auto py-20 px-6 xl:px-0">
       <div className="flex items-end justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Posts</h2>
+        <h2 className="text-3xl font-bold tracking-tight">News</h2>
         <Select defaultValue="recommended">
           <SelectTrigger className="w-[180px]">
             <SelectValue />
