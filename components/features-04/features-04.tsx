@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 import {
   Accordion,
@@ -25,9 +26,13 @@ const features = [
       "Explore a wide range of pre-built modules that help you launch Healthcare AI applications faster and with less effort than ever before.",
     cta: "Explore Library",
     media: (
-      <div className="w-full h-full bg-blue-50 rounded-xl flex items-center justify-center p-8 text-blue-900">
-        <h3 className="text-2xl font-semibold">Visual of Component Library</h3>
-      </div>
+      <Image
+        src="/CuteRobotLibrary.png"
+        alt="A visual of the Healthcare AI Component Library"
+        width={1200}
+        height={800}
+        className="w-full h-full object-cover rounded-xl"
+      />
     ),
   },
   {
