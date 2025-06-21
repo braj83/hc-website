@@ -139,9 +139,6 @@ const Features04Page = () => {
                         <div className="w-full h-[60vh] rounded-xl mb-4">
                           {media}
                         </div>
-                        <div className="flex justify-end">
-                          <Button>{cta}</Button>
-                        </div>
                       </div>
                   </AccordionContent>
                 </AccordionItem>
