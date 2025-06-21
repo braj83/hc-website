@@ -112,7 +112,7 @@ const Features04Page = () => {
               type="single"
               className="w-full"
             >
-              {features.map(({ title, description, icon: Icon }, index) => (
+              {features.map(({ title, description, icon: Icon, cta, media }, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
@@ -126,6 +126,14 @@ const Features04Page = () => {
                   </AccordionTrigger>
                   <AccordionContent className="text-[17px] leading-relaxed text-muted-foreground">
                     <p>{description}</p>
+                      <div className="mt-6 md:hidden">
+                        <div className="w-full aspect-video rounded-xl mb-4">
+                          {media}
+                        </div>
+                        <div className="flex justify-end">
+                          <Button>{cta}</Button>
+                        </div>
+                      </div>
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -133,7 +141,7 @@ const Features04Page = () => {
           </div>
 
           {/* Media */}
-          <div className="w-full h-full rounded-xl relative">
+          <div className="hidden md:block w-full h-full rounded-xl relative">
             {activeFeature ? (
               <>
                 {activeFeature.media}
