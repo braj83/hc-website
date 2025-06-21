@@ -133,7 +133,7 @@ const Features04Page = () => {
           </div>
 
           {/* Media */}
-          <div className="hidden md:block w-full h-full rounded-xl relative">
+          <div className="w-full h-full rounded-xl relative">
             {activeFeature ? (
               <>
                 {activeFeature.media}
