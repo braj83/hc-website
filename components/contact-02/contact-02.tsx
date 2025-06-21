@@ -14,7 +14,7 @@ const Contact02Page = () => (
       <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">
         Chat to our friendly team
       </h2>
-      <p className="mt-3 text-base sm:text-lg">
+      <p className="mt-3 text-base sm:text-lg text-muted-foreground">
         We&apos;d love to hear from you. Please fill out this form or shoot us
         an email.
       </p>
