@@ -54,7 +54,7 @@ const features = [
 
 const Features04Page = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div id="platform" className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-lg w-full py-12 px-6 lg:px-0">
         <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-lg">
           Build faster with our component library
