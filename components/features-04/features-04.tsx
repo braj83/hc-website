@@ -26,14 +26,19 @@ const features = [
       "Explore a wide range of pre-built modules that help you launch Healthcare AI applications faster and with less effort than ever before.",
     cta: "Explore Library",
     media: (
-      <Image
-        src="/CuteRobotLibrary.png"
+      <div className="w-full h-full relative">
+        <Image
+        src="/images/component-library.png"
         alt="A visual of the Healthcare AI Component Library"
         width={1200}
         height={800}
         className="w-full h-full object-contain rounded-xl"
       />
-    ),
+      <Button className="absolute bottom-6 right-6">
+        Explore Library
+      </Button>
+  </div>
+          ),
   },
   {
     icon: Bot,
