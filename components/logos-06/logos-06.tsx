@@ -14,7 +14,7 @@ const Logos06Page = () => {
   return (
     <div className="flex items-center justify-center px-6 pb-12">
       <div className="overflow-hidden">
-        <p className="text-center text-xl font-medium">
+        <p className="text-center text-xl">
           More than 2.2 million companies worldwide already trust us
         </p>
 
