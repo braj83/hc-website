@@ -50,6 +50,8 @@ export const platformMenuItems = [
     icon: BookMarked,
   },
 ];
+
+// This array will be used by the desktop nav-menu
 export const mainNavLinks = [
   {
     title: "Features",
@@ -73,6 +75,7 @@ export const mainNavLinks = [
   },
 ];
 
+// This array is used by the mobile navigation-sheet
 export const mobileNavConfig = [
   {
     title: "Features",

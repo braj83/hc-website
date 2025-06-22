@@ -10,54 +10,47 @@ import {
 } from "@/components/ui/navigation-menu";
 import { NavigationMenuProps } from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
-import { platformMenuItems } from "./config";
+import { mobileNavConfig } from "./config";
 import { cn } from "@/lib/utils";
+
+// This is the class string for a standard navigation link
+const navLinkClasses =
+  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50";
 
 export const NavMenu = (props: NavigationMenuProps) => (
   <NavigationMenu {...props}>
     <NavigationMenuList>
-      <NavigationMenuItem>
-        <Link href="#features" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-          Features
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuTrigger className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-          Platform</NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-            {platformMenuItems.map((item) => (
-              <ListItem
-              key={item.title}
-              title={item.title}
-              icon={item.icon}
-              href={item.href}
-              >
-            {item.description}
-          </ListItem>
-          ))}
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <Link href="#faq" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-          Use Cases
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <Link href="#contact" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-          Contact
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <Link href="#testimonials" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-          Testimonials
-        </Link>
-      </NavigationMenuItem><NavigationMenuItem>
-        <Link href="#news" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-          News
-        </Link>
-      </NavigationMenuItem>
+      {mobileNavConfig.map((item) => (
+        <NavigationMenuItem key={item.title}>
+          {item.subItems ? (
+            <>
+              <NavigationMenuTrigger className={navLinkClasses}>
+                {item.title}
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  {item.subItems.map((subItem) => (
+                    <ListItem
+                      key={subItem.title}
+                      title={subItem.title}
+                      icon={subItem.icon}
+                      href={subItem.href}
+                    >
+                      {subItem.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </>
+          ) : (
+            <Link href={item.href!} legacyBehavior passHref>
+              <NavigationMenuLink className={navLinkClasses}>
+                {item.title}
+              </NavigationMenuLink>
+            </Link>
+          )}
+        </NavigationMenuItem>
+      ))}
     </NavigationMenuList>
   </NavigationMenu>
 );
@@ -78,7 +71,10 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="flex items-start gap-x-4">
-            <Icon className="h-6 w-6 flex-shrink-0 text-muted-foreground mt-1" />
+            <Icon
+              className="h-6 w-6 flex-shrink-0 text-muted-foreground mt-1"
+              aria-hidden="true"
+            />
             <div className="space-y-1">
               <div className="text-sm font-medium leading-none">{title}</div>
               <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">

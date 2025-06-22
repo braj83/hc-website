@@ -19,6 +19,7 @@ import Link from "next/link";
 import { mobileNavConfig } from "./config";
 import { Logo } from "./logo";
 import { useState } from "react";
+import { ActionButtons } from "./action-buttons";
 
 export const NavigationSheet = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,13 +38,15 @@ export const NavigationSheet = () => {
       <SheetContent>
         <SheetHeader>
           <SheetTitle className="sr-only">Main Menu</SheetTitle>
-            <SheetDescription className="sr-only">
-              A list of navigation links to sections of the page.
-            </SheetDescription>
+          <SheetDescription className="sr-only">
+            A list of navigation links for the site.
+          </SheetDescription>
         </SheetHeader>
-        <div onClick={handleLinkClick}>
+
+        <Link href="/" onClick={handleLinkClick}>
           <Logo />
-        </div>
+          <span className="sr-only">Go to Homepage</span>
+        </Link>
 
         <div className="mt-12 text-base space-y-1">
           {mobileNavConfig.map((item) =>
@@ -66,7 +69,7 @@ export const NavigationSheet = () => {
                             href={subItem.href}
                             onClick={handleLinkClick}
                             className="flex items-center gap-2 text-muted-foreground hover:text-primary"
-                            legacyBehavior>
+                          >
                             <subItem.icon className="h-5 w-5 mr-2" />
                             {subItem.title}
                           </Link>
@@ -82,18 +85,16 @@ export const NavigationSheet = () => {
                 href={item.href!}
                 onClick={handleLinkClick}
                 className="block py-2 text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none focus:text-primary"
-                legacyBehavior>
+              >
                 {item.title}
               </Link>
             )
           )}
         </div>
 
+        {/* Reusable Action Buttons */}
         <div className="absolute bottom-8 left-0 right-0 px-8 space-y-4">
-          <Button variant="outline" className="w-full">
-            Sign In
-          </Button>
-          <Button className="w-full">Get Started</Button>
+          <ActionButtons />
         </div>
       </SheetContent>
     </Sheet>
