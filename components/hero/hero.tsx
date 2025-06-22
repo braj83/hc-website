@@ -15,7 +15,7 @@ const Hero = () => {
         y: ["0rem", "-0.75rem", "0rem"],
       },
       {
-        duration: 20,             // Speed of one full bounce (slower is more subtle)
+        duration: 5,              // Speed of one full bounce (slower is more subtle)
         repeat: Infinity,         // Loop forever
         ease: "easeInOut",        // Makes the movement smooth and gentle
       }
