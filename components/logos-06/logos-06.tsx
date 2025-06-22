@@ -14,7 +14,7 @@ const Logos06Page = () => {
   return (
     <div className="flex items-center justify-center px-6 pb-12">
       <div className="overflow-hidden">
-        <p className="text-center text-xl">
+        <p className="text-center text-lg">
           Hundreds of models in a HIPAA-compliant framework
         </p>
 

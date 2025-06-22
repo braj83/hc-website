@@ -9,14 +9,12 @@ import Link from "next/link";
 
 const Contact02Page = () => (
   <div id="contact" className="min-h-screen flex items-center justify-center py-16">
-    <div className="w-full max-w-screen-xl mx-auto px-6 xl:px-0">
-      <b className="text-muted-foreground">Contact Us</b>
+    <div className="w-full max-w-screen-lg mx-auto px-6 xl:px-0">
       <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">
-        Chat to our friendly team
+        Get in Touch
       </h2>
       <p className="mt-3 text-base sm:text-lg text-muted-foreground">
-        We&apos;d love to hear from you. Please fill out this form or shoot us
-        an email.
+        Have a question or need support? We’re here to help!
       </p>
       <div className="mt-24 grid lg:grid-cols-2 gap-16 md:gap-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
@@ -30,9 +28,9 @@ const Contact02Page = () => (
             </p>
             <Link
               className="font-medium text-primary"
-              href="mailto:akashmoradiya3444@gmail.com"
+              href="mailto:info@healthcheck.com"
             >
-              akashmoradiya3444@gmail.com
+              info@healthcheck.com
             </Link>
           </div>
           <div>
@@ -53,14 +51,16 @@ const Contact02Page = () => (
             </div>
             <h3 className="mt-6 font-semibold text-xl">Office</h3>
             <p className="my-2.5 text-muted-foreground">
-              Come say hello at our office HQ.
+              Come say hello at our HQ.
             </p>
             <Link
               className="font-medium text-primary"
               href="https://map.google.com"
               target="_blank"
             >
-              100 Smith Street Collingwood <br /> VIC 3066 AU
+              3415 S. Sepulveda Blvd.<br />
+              12th Floor<br />
+              Los Angeles, CA 90034
             </Link>
           </div>
           <div>
@@ -73,9 +73,9 @@ const Contact02Page = () => (
             </p>
             <Link
               className="font-medium text-primary"
-              href="tel:akashmoradiya3444@gmail.com"
+              href="tel:+13103348456"
             >
-              +1 (555) 000-0000
+              +1 (310) 334-8456
             </Link>
           </div>
         </div>

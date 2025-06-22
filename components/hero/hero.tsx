@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
+import { ArrowUpRight, AudioLines } from "lucide-react";
 import React from "react";
 import Image from 'next/image';
 
@@ -35,7 +35,7 @@ const Hero = () => {
               size="lg"
               className="w-full sm:w-auto text-base shadow-none"
             >
-              <CirclePlay className="!h-5 !w-5" /> Call sample Agent
+              <AudioLines className="!h-5 !w-5" /> Call sample Agent
             </Button>
           </div>
         </div>

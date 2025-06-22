@@ -1,58 +1,60 @@
 import {
-  Blocks,
-  Bot,
-  ChartPie,
-  Film,
-  MessageCircle,
-  Settings2,
+  Workflow,
+  BotMessageSquare,
+  Package,
+  Webcam,
+  HeartPulse,
+  FileJson2,
+  TestTubes,
+  ShieldCheck,
 } from "lucide-react";
 import React from "react";
 
 const features = [
   {
-    icon: Settings2,
+    icon: FileJson2,
     title: "EHR/CRM Integrations",
     description:
       "Design your space with drag-and-drop simplicity—create grids, lists, or galleries in seconds.",
   },
   {
-    icon: Blocks,
+    icon: Workflow,
     title: "Clinical Workflow Automation",
     description:
       "Embed polls, quizzes, or forms to keep your audience engaged.",
   },
   {
-    icon: Bot,
+    icon: BotMessageSquare,
     title: "Voice Agents",
     description:
       "Generate summaries, auto-format content, or translate into multiple languages seamlessly.",
   },
   {
-    icon: Film,
+    icon: Webcam,
     title: "Sync/Async Telehealth",
     description:
       "Connect with Spotify, Instagram, or your own media library for dynamic visuals and sound.",
   },
   {
-    icon: ChartPie,
+    icon: TestTubes,
     title: "Reference Lab Integrations",
     description:
       "Track engagement, clicks, and user activity with intuitive charts and reports.",
   },
   {
-    icon: MessageCircle,
+    icon: ShieldCheck,
     title: "AI Governance and Trust Framework",
     description:
       "Comment, tag, and assign tasks directly within your documents.",
   },
   {
-    icon: ChartPie,
+    icon: Package,
     title: "Uber/DoorDash Deliver",
     description:
       "Track engagement, clicks, and user activity with intuitive charts and reports.",
   },
   {
-    icon: MessageCircle,
+    icon: HeartPulse,
     title: "RPM Automation",
     description:
       "Comment, tag, and assign tasks directly within your documents.",
