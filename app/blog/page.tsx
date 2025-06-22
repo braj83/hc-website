@@ -46,10 +46,6 @@ const Blog02Page = () => {
               <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
                 A beginner&apos;s guide to blackchain for engineers
               </h3>
-              <p className="mt-2 text-muted-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
 
               <Button className="mt-6 shadow-none">
                 Read more <ChevronRight />
