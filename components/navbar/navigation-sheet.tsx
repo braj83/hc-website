@@ -5,7 +5,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
-  SheetDescription, // Good to add this too
+  SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import {
