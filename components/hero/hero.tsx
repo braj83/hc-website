@@ -1,3 +1,6 @@
+"use client";
+import { useEffect } from "react";
+import { animate } from "motion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, AudioLines } from "lucide-react";
@@ -5,13 +8,23 @@ import React from "react";
 import Image from 'next/image';
 
 const Hero = () => {
+  useEffect(() => {
+    animate(
+      "#hero-image",
+      {
+        y: ["0rem", "-0.75rem", "0rem"],
+      },
+      {
+        duration: 8,              // Speed of one full bounce (slower is more subtle)
+        repeat: Infinity,         // Loop forever
+        ease: "easeInOut",        // Makes the movement smooth and gentle
+      }
+    );
+  }, []);
+
   return (
-    // 'relative' and 'overflow-hidden' are still useful for positioning child elements
     <div className="relative min-h-[calc(100vh-6rem)] flex flex-col items-center justify-center py-20 px-6 overflow-hidden">
-      {/* Main content container using Flexbox */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-        
-        {/* Text Content Block (z-10 brings it to the front) */}
         <div className="relative z-10 text-center lg:text-left max-w-2xl">
           <Badge className="bg-primary rounded-md py-1 border-none">
             Early access available now! 🚀
@@ -39,9 +52,10 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Your Image (z-5 places it behind the text) */}
+        {/* Hero Image (z-5 places it behind the text) */}
         <div className="relative z-5 mt-12 lg:mt-0 lg:-ml-20">
           <Image
+            id="hero-image"
             src="/cute-robot-say-hello.png"
             alt="Healthcare AI illustration"
             width={450}

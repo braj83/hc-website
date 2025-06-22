@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 import Image from "next/image";
-
+import { useAnimate, type AnimationSequence } from "motion/react";
 import {
   Accordion,
   AccordionContent,
@@ -137,9 +137,18 @@ const features = [
 
 const Features04Page = () => {
   const [activeItem, setActiveItem] = useState("item-0");
+  const [scope, animate] = useAnimate();
   const activeFeature = features.find(
     (_, index) => `item-${index}` === activeItem
   );
+  useEffect(() => {
+    if (!scope.current) return;
+    const animationSequence: AnimationSequence = [
+      [scope.current, { opacity: 0, y: "1rem" }, { duration: 0 }],
+      [scope.current, { opacity: 1, y: "0rem" }, { duration: 0.5, ease: "easeOut" }],
+    ] as const;
+    animate(animationSequence);
+  }, [activeFeature]);
 
   return (
     <div id="platform" className="min-h-screen flex items-center justify-center">
@@ -181,7 +190,7 @@ const Features04Page = () => {
           </div>
 
           {/* Media */}
-          <div className="hidden md:block w-full h-full rounded-xl relative">
+          <div ref={scope} className="hidden md:block w-full h-full rounded-xl relative">
             {activeFeature ? activeFeature.media : null}
           </div>
         </div>

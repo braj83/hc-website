@@ -56,8 +56,7 @@ const Contact02Page = () => (
             <Link
               className="font-medium text-primary"
               href="https://map.google.com"
-              target="_blank"
-              legacyBehavior>
+              target="_blank">
               <span>
               3415 S. Sepulveda Blvd.<br />
               12th Floor<br />
