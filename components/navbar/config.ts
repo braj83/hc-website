@@ -10,7 +10,7 @@ import {
 export const platformMenuItems = [
   {
     title: "Component Library",
-    href: "#component-library", // Make sure you have sections with these IDs on your page
+    href: "#component-library",
     description:
       "A library of pre-built modules to launch AI applications faster.",
     icon: Blocks,
@@ -48,5 +48,54 @@ export const platformMenuItems = [
     description:
       "A standards-based foundation of clinical, regulatory, and operational data.",
     icon: BookMarked,
+  },
+];
+export const mainNavLinks = [
+  {
+    title: "Features",
+    href: "#features",
+  },
+  {
+    title: "Use Cases",
+    href: "#faq",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
+  },
+  {
+    title: "Testimonials",
+    href: "#testimonials",
+  },
+  {
+    title: "News",
+    href: "#news",
+  },
+];
+
+export const mobileNavConfig = [
+  {
+    title: "Features",
+    href: "#features",
+  },
+  {
+    title: "Platform",
+    subItems: platformMenuItems,
+  },
+  {
+    title: "Use Cases",
+    href: "#faq",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
+  },
+  {
+    title: "Testimonials",
+    href: "#testimonials",
+  },
+  {
+    title: "News",
+    href: "#news",
   },
 ];
