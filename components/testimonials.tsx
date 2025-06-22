@@ -100,7 +100,7 @@ const TestimonialList = () =>
           </div>
         </div>
         <Button variant="ghost" size="icon" asChild>
-          <Link href="#" target="_blank">
+          <Link href="#" target="_blank" legacyBehavior>
             <TwitterLogo className="w-4 h-4" />
           </Link>
         </Button>

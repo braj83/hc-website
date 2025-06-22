@@ -63,7 +63,7 @@ const Footer = () => {
                   <Link
                     href={href}
                     className="text-muted-foreground hover:text-foreground"
-                  >
+                    legacyBehavior>
                     {title}
                   </Link>
                 </li>
@@ -92,16 +92,16 @@ const Footer = () => {
           </span>
 
           <div className="flex items-center gap-5 text-muted-foreground">
-            <Link href="#" target="_blank">
+            <Link href="#" target="_blank" legacyBehavior>
               <TwitterIcon className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank">
+            <Link href="#" target="_blank" legacyBehavior>
               <DribbbleIcon className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank">
+            <Link href="#" target="_blank" legacyBehavior>
               <TwitchIcon className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank">
+            <Link href="#" target="_blank" legacyBehavior>
               <GithubIcon className="h-5 w-5" />
             </Link>
           </div>

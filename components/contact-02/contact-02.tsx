@@ -57,10 +57,12 @@ const Contact02Page = () => (
               className="font-medium text-primary"
               href="https://map.google.com"
               target="_blank"
-            >
+              legacyBehavior>
+              <span>
               3415 S. Sepulveda Blvd.<br />
               12th Floor<br />
               Los Angeles, CA 90034
+              </span>
             </Link>
           </div>
           <div>

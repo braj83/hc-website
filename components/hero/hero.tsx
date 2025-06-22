@@ -8,7 +8,6 @@ const Hero = () => {
   return (
     // 'relative' and 'overflow-hidden' are still useful for positioning child elements
     <div className="relative min-h-[calc(100vh-6rem)] flex flex-col items-center justify-center py-20 px-6 overflow-hidden">
-
       {/* Main content container using Flexbox */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         

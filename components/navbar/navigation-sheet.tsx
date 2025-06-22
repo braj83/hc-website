@@ -66,7 +66,7 @@ export const NavigationSheet = () => {
                             href={subItem.href}
                             onClick={handleLinkClick}
                             className="flex items-center gap-2 text-muted-foreground hover:text-primary"
-                          >
+                            legacyBehavior>
                             <subItem.icon className="h-5 w-5 mr-2" />
                             {subItem.title}
                           </Link>
@@ -82,7 +82,7 @@ export const NavigationSheet = () => {
                 href={item.href!}
                 onClick={handleLinkClick}
                 className="block py-2 text-lg font-medium text-foreground transition-colors hover:text-primary focus:outline-none focus:text-primary"
-              >
+                legacyBehavior>
                 {item.title}
               </Link>
             )
