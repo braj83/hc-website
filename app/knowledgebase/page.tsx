@@ -18,7 +18,7 @@ import {
   HeartPulse, Component, LucideIcon
 } from 'lucide-react';
 
-// --- HERO COMPONENT WITH BALANCED PADDING ---
+// --- HERO COMPONENT WITH FINAL ADJUSTMENTS ---
 const KnowledgebaseHero = () => {
     return (
       <div className="relative bg-card pt-20 md:pt-32 pb-12 md:pb-20">
@@ -31,29 +31,31 @@ const KnowledgebaseHero = () => {
             "inset-x-0 h-full skew-y-12"
           )}
         />
-        <div className="relative z-10 mx-auto max-w-6xl grid grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:px-8">
-            {/* UPDATED: Simplified alignment for text container */}
-            <div>
-                <Badge variant="secondary" className="border-none">
-                    Powering Intelligent Healthcare
-                </Badge>
-                <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl !leading-[1.2]">
-                    Healthcare Knowledgebase
-                </h1>
-                <p className="mt-6 text-lg text-muted-foreground">
-                    A collection of healthcare standards, code systems, APIs and other resources for building intelligent applications.
-                </p>
-            </div>
-            {/* UPDATED: Simplified alignment for image container */}
-            <div>
-                <Image
-                    src="/cute-robot-reading-book.png"
-                    alt="Cute robot reading a book"
-                    width={450}
-                    height={450}
-                    // As requested, no rounded corners or shadow
-                    priority 
-                />
+        {/* UPDATED: Changed max-w-6xl to max-w-screen-lg */}
+        <div className="relative z-10 mx-auto max-w-screen-lg px-6 lg:px-8">
+            {/* Grid Layout Container */}
+            <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+                <div>
+                    {/* UPDATED: Changed badge variant to primary */}
+                    <Badge className="bg-primary rounded-md py-1 border-none">
+                        Powering Intelligent Healthcare
+                    </Badge>
+                    <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl !leading-[1.2]">
+                        Healthcare Knowledgebase
+                    </h1>
+                    <p className="mt-6 text-lg text-muted-foreground">
+                        A collection of healthcare standards, code systems, APIs and other resources for building intelligent applications.
+                    </p>
+                </div>
+                <div className="flex justify-center lg:justify-end">
+                    <Image
+                        src="/cute-robot-reading-book.png"
+                        alt="Cute robot reading a book"
+                        width={450}
+                        height={450}
+                        priority 
+                    />
+                </div>
             </div>
         </div>
       </div>

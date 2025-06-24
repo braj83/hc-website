@@ -5,7 +5,6 @@ import Features4 from "@/components/features-04/features-04";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero/hero";
 import { BackgroundPattern } from "@/components/hero/background-pattern";
-import { Navbar } from "@/components/navbar";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact-02/contact-02";
 import Blog from "@/app/blog/page";
@@ -14,7 +13,6 @@ import Logos06Page from "@/components/logos-06/logos-06";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <BackgroundPattern />
       <main className="pt-16 xs:pt-20 sm:pt-24">
         <Hero />

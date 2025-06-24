@@ -4,6 +4,9 @@ import { ThemeProvider } from "next-themes";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
+// 1. Import your Navbar component
+import { Navbar } from "@/components/navbar"; // This path is correct based on your index.ts file
+
 const geistSans = Geist({
   subsets: ["latin"],
 });
@@ -102,7 +105,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <TooltipProvider>{children}</TooltipProvider>
+          <TooltipProvider>
+            {/* 2. Place the Navbar here */}
+            <Navbar />
+
+            {/* The rest of your app will be rendered here as children */}
+            <main>{children}</main>
+            
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
