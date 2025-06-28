@@ -44,7 +44,7 @@ export const platformMenuItems = [
   },
   {
     title: "Knowledgebase",
-    href: "#knowledgebase",
+    href: "/knowledgebase",
     description:
       "A standards-based foundation of clinical, regulatory, and operational data.",
     icon: BookMarked,

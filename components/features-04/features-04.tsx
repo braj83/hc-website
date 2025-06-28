@@ -17,6 +17,7 @@ import {
   PlugZap,
   BookMarked,
 } from "lucide-react";
+import Link from 'next/link';
 
 const features = [
   {
@@ -129,7 +130,9 @@ const features = [
         height={800}
         className="w-full h-full object-contain rounded-xl"
         />
+        <Link href="/knowledgebase">
         <Button className="absolute bottom-6 right-6">Explore Knowledgebase</Button>
+        </Link>
       </div>
     ),
   },

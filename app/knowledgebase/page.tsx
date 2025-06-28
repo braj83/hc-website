@@ -32,7 +32,7 @@ const KnowledgebaseHero = () => {
           )}
         />
         {/* UPDATED: Changed max-w-6xl to max-w-screen-lg */}
-        <div className="relative z-10 mx-auto max-w-screen-lg px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-screen-lg py-12 px-6 lg:px-0">
             {/* Grid Layout Container */}
             <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                 <div>
