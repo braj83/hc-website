@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-[calc(100vh-6rem)] flex flex-col items-center justify-center py-20 px-6 overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+      <div className="max-w-screen-lg flex flex-col lg:flex-row items-center justify-center gap-8">
         <div className="relative z-10 text-center lg:text-left max-w-2xl">
           <Badge className="bg-primary rounded-md py-1 border-none">
             Early access available now! 🚀
