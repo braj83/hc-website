@@ -38,7 +38,7 @@ const KnowledgebaseHero = () => {
                 <div>
                     {/* UPDATED: Changed badge variant to primary */}
                     <Badge className="bg-primary rounded-md py-1 border-none">
-                        Powering Intelligent Healthcare
+                        Powering Intelligent Healthcare! 🚀
                     </Badge>
                     <h1 className="mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl !leading-[1.2]">
                         Healthcare Knowledgebase
