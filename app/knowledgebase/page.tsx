@@ -3,12 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 import AnimatedGridPattern from '@/components/animated-grid-pattern';
-import { 
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { cn } from '@/lib/utils';
 import {
@@ -18,25 +12,23 @@ import {
   HeartPulse, Component, LucideIcon
 } from 'lucide-react';
 
-// --- HERO COMPONENT WITH FINAL ADJUSTMENTS ---
+// --- HERO COMPONENT ---
 const KnowledgebaseHero = () => {
     return (
-      <div className="relative bg-card pt-20 md:pt-32 pb-12 md:pb-20">
+      // UPDATED: Removed background for a seamless look
+      <div className="relative pt-20 md:pt-32 pb-12 md:pb-20">
         <AnimatedGridPattern
           numSquares={40}
-          maxOpacity={0.2}
+          maxOpacity={0.1}
           duration={3}
           className={cn(
             "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
             "inset-x-0 h-full skew-y-12"
           )}
         />
-        {/* UPDATED: Changed max-w-6xl to max-w-screen-lg */}
         <div className="relative z-10 mx-auto max-w-screen-lg py-12 px-6 lg:px-0">
-            {/* Grid Layout Container */}
             <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
                 <div>
-                    {/* UPDATED: Changed badge variant to primary */}
                     <Badge className="bg-primary rounded-md py-1 border-none">
                         Powering Intelligent Healthcare! 🚀
                     </Badge>
@@ -86,39 +78,38 @@ const KnowledgebasePage = () => {
     <div className="bg-background">
       <KnowledgebaseHero />
 
-      {/* Accordion Section */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
-        <div className="mx-auto max-w-3xl text-center mb-12">
+        <div className="mx-auto max-w-3xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground">Explore Data Categories</h2>
-            <p className="mt-2 text-lg text-muted-foreground">Click on any category to view the related standards and systems.</p>
+            <p className="mt-2 text-lg text-muted-foreground">A comprehensive overview of the standards and systems available.</p>
         </div>
-        <Accordion type="single" collapsible defaultValue="item-0" className="w-full space-y-4">
-            {knowledgebaseCategories.map((category, index) => (
-                <AccordionItem key={category.categoryTitle} value={`item-${index}`} className="border bg-card rounded-xl px-4">
-                    <AccordionTrigger className="text-xl font-semibold text-card-foreground hover:no-underline">
+        
+        <div className="space-y-16">
+            {knowledgebaseCategories.map((category) => (
+                <div key={category.categoryTitle}>
+                    <h3 className="text-2xl font-semibold text-foreground border-b pb-4 mb-8">
                         {category.categoryTitle}
-                    </AccordionTrigger>
-                    <AccordionContent>
-                        <div className="pt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                            {category.features.map((feature) => (
-                            <div
-                                key={feature.title}
-                                className="flex flex-col rounded-xl p-6 border bg-background transition-all duration-300 cursor-pointer hover:scale-[1.03] hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/20"
-                            >
-                                <div className="mb-4 h-10 w-10 flex items-center justify-center bg-primary text-primary-foreground rounded-lg">
-                                <feature.icon className="h-6 w-6" aria-hidden="true" />
-                                </div>
-                                <span className="text-lg font-semibold text-foreground">{feature.title}</span>
-                                <p className="mt-1 text-muted-foreground text-[15px]">
-                                {feature.description}
-                                </p>
+                    </h3>
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        {category.features.map((feature) => (
+                        // UPDATED: Clean, transparent card with a border highlight on hover
+                        <div
+                            key={feature.title}
+                            className="flex flex-col rounded-xl p-6 border bg-transparent transition-colors hover:border-primary/50"
+                        >
+                            <div className="mb-4 h-10 w-10 flex items-center justify-center bg-primary text-primary-foreground rounded-lg">
+                            <feature.icon className="h-6 w-6" aria-hidden="true" />
                             </div>
-                            ))}
+                            <span className="text-lg font-semibold text-foreground">{feature.title}</span>
+                            <p className="mt-1 text-muted-foreground text-[15px]">
+                            {feature.description}
+                            </p>
                         </div>
-                    </AccordionContent>
-                </AccordionItem>
+                        ))}
+                    </div>
+                </div>
             ))}
-        </Accordion>
+        </div>
       </div>
     </div>
   );

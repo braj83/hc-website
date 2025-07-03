@@ -13,7 +13,6 @@ import Link from "next/link";
 import { mobileNavConfig } from "./config";
 import { cn } from "@/lib/utils";
 
-// This is the class string for a standard navigation link
 const navLinkClasses =
   "group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:text-primary focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50";
 
@@ -43,11 +42,12 @@ export const NavMenu = (props: NavigationMenuProps) => (
               </NavigationMenuContent>
             </>
           ) : (
-            <Link href={item.href!} legacyBehavior passHref>
-              <NavigationMenuLink className={navLinkClasses}>
+            // This block is now fixed to remove the warning
+            <NavigationMenuLink asChild>
+              <Link href={item.href!} className={navLinkClasses}>
                 {item.title}
-              </NavigationMenuLink>
-            </Link>
+              </Link>
+            </NavigationMenuLink>
           )}
         </NavigationMenuItem>
       ))}
